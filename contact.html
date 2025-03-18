@@ -27,22 +27,23 @@
             margin: auto;
             text-align: left;
         }
-        .logo {
-            width: 200px; /* Ajuste o tamanho conforme necessário */
-            display: block;
-            margin: 10px auto;
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .footer-logo {
-            width: 225px;
-            display: block;
-            margin: 20px auto 0 auto;
+        .header-logo {
+            width: 100px; /* Ajuste o tamanho do logo conforme necessário */
+            margin-right: 15px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="images/logo-kiko-global-trade.jpg" alt="Kiko Global Trade Logo" class="logo">
-        <h1>Contact - Kiko Global Trade</h1>
+        <div class="header-content">
+            <img src="images/logo-kiko-global-trade.jpg" alt="Kiko Global Trade Logo" class="header-logo">
+            <h1>Contact - Kiko Global Trade</h1>
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -76,7 +77,6 @@
     
     <footer>
         <p>&copy; 2025 Kiko Global Trade. All Rights Reserved.</p>
-        <img src="images/logo-util-kiko.jpg" alt="Util Kiko Logo" class="footer-logo">
     </footer>
 </body>
 </html>
