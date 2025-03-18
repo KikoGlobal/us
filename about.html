@@ -23,27 +23,38 @@
         }
         .container {
             padding: 50px;
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: row;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
         }
         .text-content {
-            max-width: 600px;
-            text-align: left;
+            width: 60%;
         }
-        .image-content {
-            margin-left: 20px;
+        .image-container {
+            width: 35%;
+            text-align: center;
         }
-        .image-content img {
-            max-width: 250px;
-            height: auto;
+        .about-image {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: auto;
+        }
+        .award-text {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>About Us - Kiko Global Trade</h1>
+        <h1>About Kiko Global Trade</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -52,22 +63,25 @@
             <a href="http://utilkiko.com.br/en/disposable.pdf" target="_blank">Catalog</a>
         </nav>
     </header>
-    
+
     <section class="container">
         <div class="text-content">
-            <h2>About Kiko Global Trade</h2>
-            <h3>Your Strategic Partner in Internationalization</h3>
+            <h2>Your Strategic Partner in Internationalization</h2>
             <p>Kiko Global Trade is the international expansion arm of Util Kiko, a company with over 50 years of market expertise. Recognized as one of the Top 5 companies in Brazil since 2006, we have consistently adapted to market demands, driving business growth and fostering global connections.</p>
+
             <p>With a strong commitment to innovation and strategic expansion, we have successfully established operations in Paraguay, Chile, Uruguay, and the United States, continuously broadening our international reach.</p>
+
             <p>At Kiko Global Trade, we believe in building long-term relationships based on trust, efficiency, and market intelligence. Our deep industry knowledge and extensive global network allow us to navigate complex international landscapes, empowering businesses to expand with confidence.</p>
+
             <p>Guided by a forward-thinking approach, we are committed to bridging markets, creating opportunities, and driving sustainable success in an ever-evolving global economy.</p>
-            <p><strong>Welcome to Kiko Global Trade – where your global potential becomes reality.</strong></p>
         </div>
-        <div class="image-content">
-            <img src="images/edited_image.png" alt="Top 5 Award Badge">
+        <div class="image-container">
+            <img src="images/edited_image.png" alt="Award Recognition" class="about-image">
+            <p class="award-text">Awarded since 2006 Top 5 in at least 1 region of Brazil<br>
+            Supermercado Moderno SM / Varejo SA / SuperHiper</p>
         </div>
     </section>
-    
+
     <footer>
         <p>&copy; 2025 Kiko Global Trade. All Rights Reserved.</p>
     </footer>
