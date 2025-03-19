@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            color: black; /* Define o texto para preto */
+            color: black; /* Texto preto */
         }
         .top-bar {
             background-color: #D32F2F;
@@ -59,6 +59,33 @@
             padding: 15px;
             margin-top: 20px;
         }
+
+        /* ======= Ajuste Responsivo ======= */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .container {
+                padding: 30px 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            p, ul {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -76,7 +103,7 @@
             <a href="about.html">About Us</a>
             <a href="services.html">Services</a>
             <a href="contact.html">Contact</a>
-            <a href="utilkiko.html">UTILKIKO</a> <!-- Atualizado -->
+            <a href="utilkiko.html">UTILKIKO</a>
         </nav>
     </header>
 
