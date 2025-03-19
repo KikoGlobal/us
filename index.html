@@ -55,11 +55,13 @@
             color: #666;
         }
         .hero-image {
-            width: 40%; /* Define o tamanho para 40% do original */
-            max-width: 500px; /* Garante que a imagem não passe desse tamanho */
+            width: 40%; /* Define a imagem para 40% do tamanho original */
+            max-width: 500px; /* Limite para garantir que nunca fique grande demais */
+            min-width: 200px; /* Define um tamanho mínimo para evitar que suma */
             height: auto;
             display: block;
-            margin: 20px auto; /* Centraliza a imagem */
+            margin: 20px auto;
+            border: 2px solid #ccc; /* Apenas para visualização */
         }
         .welcome-section {
             background-color: #D32F2F;
@@ -102,8 +104,9 @@
                 font-size: 16px;
             }
             .hero-image {
-                width: 60%; /* Em celulares, a imagem será maior para melhor visualização */
+                width: 60%; /* Aumenta um pouco no celular */
                 max-width: 300px;
+                min-width: 200px;
             }
             .welcome-section h2 {
                 font-size: 24px;
