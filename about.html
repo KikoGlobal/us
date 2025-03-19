@@ -77,6 +77,35 @@
             margin-top: 20px;
             text-align: center;
         }
+
+        /* ======= Ajuste Responsivo ======= */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text-content {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+            .image-content {
+                width: 90%;
+            }
+            .image-content img {
+                max-width: 80%;
+            }
+            .award-text {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
