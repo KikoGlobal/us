@@ -83,6 +83,36 @@
             display: block;
             margin: 10px auto;
         }
+
+        /* ======= Ajuste Responsivo ======= */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .content-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .content-section img {
+                max-width: 90%;
+            }
+            .text-content {
+                width: 90%;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .logo {
+                height: 50px;
+            }
+            .footer img {
+                max-width: 200px;
+            }
+        }
     </style>
 </head>
 <body>
