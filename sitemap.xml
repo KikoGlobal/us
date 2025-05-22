@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://kikoglobal.github.io/us/</loc>
-      <priority>1.00</priority>
-   </url>
-   <!-- Se tiver outras páginas, adicione aqui -->
+  <url>
+    <loc>https://kikoglobal.github.io/us/</loc>
+    <priority>1.00</priority>
+    <lastmod>2025-05-22</lastmod>
+  </url>
+  <url>
+    <loc>https://kikoglobal.github.io/us/about.html</loc>
+    <priority>0.80</priority>
+    <lastmod>2025-05-14</lastmod>
+  </url>
+  <url>
+    <loc>https://kikoglobal.github.io/us/contact.html</loc>
+    <priority>0.80</priority>
+    <lastmod>2025-05-14</lastmod>
+  </url>
+  <url>
+    <loc>https://kikoglobal.github.io/us/index.html</loc>
+    <priority>1.00</priority>
+    <lastmod>2025-05-14</lastmod>
+  </url>
+  <url>
+    <loc>https://kikoglobal.github.io/us/services.html</loc>
+    <priority>0.80</priority>
+    <lastmod>2025-05-14</lastmod>
+  </url>
+  <url>
+    <loc>https://kikoglobal.github.io/us/utilkiko.html</loc>
+    <priority>0.80</priority>
+    <lastmod>2025-05-14</lastmod>
+  </url>
 </urlset>
