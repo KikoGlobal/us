@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Indica aos buscadores onde está o seu mapa do site
+Sitemap: https://kikoglobal.github.io/us/sitemap.xml
