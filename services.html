@@ -4,91 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Kiko Global Trade</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
-            color: black; /* Texto preto */
+            color: black;
+            background-color: #f5f5f5;
         }
+
+        /* Top Bar */
         .top-bar {
             background-color: #D32F2F;
             color: white;
-            padding: 10px;
+            padding: 10px 20px;
             font-size: 14px;
             text-align: right;
-            padding-right: 20px;
         }
+
+        /* Header */
         header {
             background-color: white;
-            padding: 15px 20px;
+            padding: 15px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-bottom: 3px solid #D32F2F;
+            flex-wrap: wrap;
+            gap: 12px;
         }
+
         .logo {
             height: 60px;
         }
+
         nav {
             display: flex;
-            gap: 20px;
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
+
         nav a {
             color: #D32F2F;
             text-decoration: none;
             font-weight: bold;
             font-size: 16px;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
+        /* Content */
         .container {
             max-width: 900px;
-            margin: auto;
+            margin: 24px auto 0 auto;
             padding: 50px 20px;
             text-align: left;
+            background-color: #ffffff;
         }
+
         h1, h2, h3 {
-            color: black; /* Títulos agora em preto */
+            color: black;
+            margin-top: 0;
         }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 14px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-top: 22px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-top: 0;
+        }
+
+        ul {
+            margin: 10px 0 18px 20px;
+            padding: 0;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer */
         .footer {
             background-color: #333;
             color: white;
-            padding: 15px;
-            margin-top: 20px;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 24px;
         }
 
-        /* ======= Ajuste Responsivo ======= */
+        /* ======= Responsive ======= */
         @media (max-width: 768px) {
+            .top-bar {
+                text-align: center;
+                padding: 10px 12px;
+            }
+
             header {
-                flex-direction: column;
+                padding: 12px 16px;
+                justify-content: center;
                 text-align: center;
             }
+
+            .logo {
+                height: 48px;
+            }
+
             nav {
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 15px;
+                width: 100%;
+                gap: 14px;
             }
+
+            nav a {
+                font-size: 15px;
+            }
+
             .container {
-                padding: 30px 10px;
+                padding: 30px 16px;
+                margin-top: 16px;
             }
+
             h1 {
                 font-size: 24px;
             }
+
             h2 {
-                font-size: 22px;
+                font-size: 20px;
             }
+
             h3 {
-                font-size: 18px;
+                font-size: 17px;
             }
+
             p, ul {
                 font-size: 16px;
             }
         }
+
+        @media (max-width: 420px) {
+            nav a {
+                font-size: 14px;
+            }
+
+            .container {
+                padding: 26px 14px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <div class="top-bar">
@@ -108,44 +196,52 @@
 
     <section class="container">
         <h1>Your Strategic Bridge to Global Markets</h1>
-        <p>Kiko Global Trade is the global expansion arm of Util Kiko, a company with over 50 years of market expertise. Today, we act as the <strong>strategic bridge connecting South America with the United States</strong>, facilitating organic growth and unlocking new business opportunities. We represent your company's interests across borders, ensuring a seamless transition into international markets.</p>
-        
+
+        <p>
+            Kiko Global Trade is the global expansion arm of Util Kiko, a company with over 50 years of market expertise. Today, we act as the
+            <strong>strategic bridge connecting South America with the United States</strong>, facilitating organic growth and unlocking new business opportunities.
+            We represent your company's interests across borders, ensuring a seamless transition into international markets.
+        </p>
+
         <h2>What We Do</h2>
-        
-        <h3>Business Internationalization & Representation</h3>
-        <p>We do more than connect suppliers; we represent the interests of companies on the other side of the Americas. By establishing direct partnerships with manufacturers and vetted distributors, we eliminate intermediaries and drive <strong>sustainable, organic growth</strong> for our clients.</p>
-        
-        <h3>Import Solutions: Connecting U.S. to South America</h3>
+
+        <h3>Business Internationalization and Representation</h3>
+        <p>
+            We do more than connect suppliers; we represent the interests of companies on the other side of the Americas. By establishing direct partnerships
+            with manufacturers and vetted distributors, we eliminate intermediaries and drive <strong>sustainable, organic growth</strong> for our clients.
+        </p>
+
+        <h3>Import Solutions: Connecting the U.S. to South America</h3>
         <p>Our streamlined process provides end-to-end support for businesses looking to bring international quality to the South American market:</p>
         <ul>
-            <li><strong>Market Research</strong> – Identifying trustworthy international suppliers tailored to your needs.</li>
-            <li><strong>End-to-End Logistics</strong> – Overseeing shipment, customs clearance, and delivery.</li>
-            <li><strong>Strategic Warehousing</strong> – Secure storage solutions at our Atibaia facility.</li>
+            <li><strong>Market Research</strong>: identifying trustworthy international suppliers tailored to your needs.</li>
+            <li><strong>End-to-End Logistics</strong>: overseeing shipment, customs clearance, and delivery.</li>
+            <li><strong>Strategic Warehousing</strong>: secure storage solutions at our Atibaia facility.</li>
         </ul>
-        
+
         <h3>Export Solutions: Your Gateway to the United States</h3>
         <p>We simplify the journey for South American companies looking to establish a presence in the U.S. market:</p>
         <ul>
-            <li><strong>Trade Show & Event Support</strong> – Showcasing your products at major industry events in the U.S..</li>
-            <li><strong>Compliance & Representation</strong> – Managing regulatory, tax, and legal interests for hassle-free operations.</li>
-            <li><strong>Organic Market Entry</strong> – Handling logistics and storage to ensure your business grows naturally and securely.</li>
+            <li><strong>Trade Show and Event Support</strong>: showcasing your products at major industry events in the U.S.</li>
+            <li><strong>Compliance and Representation</strong>: managing regulatory, tax, and legal interests for hassle-free operations.</li>
+            <li><strong>Organic Market Entry</strong>: handling logistics and storage to ensure your business grows naturally and securely.</li>
         </ul>
-        
+
         <h3>Strategic Presence</h3>
         <p>Operating from key hubs, we ensure proximity and efficiency for every client:</p>
         <ul>
-            <li>📍 São Paulo (SP), Brazil</li>
-            <li>📍 Atibaia (SP), Brazil</li>
-            <li>📍 Congonhal (MG), Brazil</li>
-            <li>📍 Orlando (FL), USA</li>
+            <li>São Paulo (SP), Brazil</li>
+            <li>Atibaia (SP), Brazil</li>
+            <li>Congonhal (MG), Brazil</li>
+            <li>Orlando (FL), USA</li>
         </ul>
-        
+
         <h3>Why Partner With Us?</h3>
         <ul>
-            <li>✅ 50+ years of proven industry expertise</li>
-            <li>✅ Direct bridge between the U.S. and South American markets</li>
-            <li>✅ Full representation of your interests on both sides of the border</li>
-            <li>✅ Expertise in organic growth and long-term strategic partnerships</li>
+            <li>50+ years of proven industry expertise</li>
+            <li>Direct bridge between the U.S. and South American markets</li>
+            <li>Full representation of your interests on both sides of the border</li>
+            <li>Expertise in organic growth and long-term strategic partnerships</li>
         </ul>
     </section>
 
