@@ -6,19 +6,14 @@
     
     <title>Kiko Global Trade - Professional Global Trade Solutions</title>
     <meta name="description" content="Kiko Global Trade: Over 50 years of expertise in seamless global trade, logistics, and international partnerships.">
-    <link rel="canonical" href="https://kikoglobal.github.io/us/">
+    
+    <link rel="canonical" href="https://kikoglobal.trade/">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kikoglobal.github.io/us/">
+    <meta property="og:url" content="https://kikoglobal.trade/">
     <meta property="og:title" content="Kiko Global Trade - Professional Global Trade Solutions">
     <meta property="og:description" content="Connecting businesses to international markets with reliable logistics and strategic partnerships.">
-    <meta property="og:image" content="https://kikoglobal.github.io/us/images/Gemini_Generated.jpg">
-
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://kikoglobal.github.io/us/">
-    <meta property="twitter:title" content="Kiko Global Trade - Home">
-    <meta property="twitter:description" content="Expanding horizons, connecting markets. Over 50 years of expertise.">
-    <meta property="twitter:image" content="https://kikoglobal.github.io/us/images/Gemini_Generated.jpg">
+    <meta property="og:image" content="https://kikoglobal.trade/images/Gemini_Generated.jpg">
 
     <style>
         body {
@@ -27,6 +22,7 @@
             padding: 0;
             text-align: center;
             background-color: #f5f5f5;
+            color: #333;
         }
 
         /* Top Bar */
@@ -70,7 +66,7 @@
 
         /* Hero Section */
         .hero-section {
-            padding: 60px 20px 80px 20px;
+            padding: 60px 20px;
             max-width: 900px;
             margin: auto;
             background-color: #ffffff;
@@ -112,10 +108,6 @@
             transition: 0.3s;
         }
 
-        .contact-button:hover {
-            background-color: #B71C1C;
-        }
-
         /* Welcome Section */
         .welcome-section {
             background-color: #D32F2F;
@@ -141,6 +133,34 @@
             color: white;
             padding: 20px;
             font-size: 14px;
+        }
+
+        /* ======= AJUSTE PARA CELULAR (RESPONSIVO) ======= */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column; /* Logo em cima, menu embaixo */
+                padding: 15px 20px;
+            }
+            .logo {
+                margin-bottom: 15px;
+            }
+            nav {
+                flex-direction: column; /* Menu em lista vertical */
+                gap: 12px;
+                width: 100%;
+            }
+            nav a {
+                display: block;
+                padding: 8px;
+                border-bottom: 1px solid #eee;
+            }
+            .hero-section h1 {
+                font-size: 24px; /* Texto menor para caber na tela */
+            }
+            .hero-section p, .welcome-section p {
+                font-size: 16px;
+                padding: 0 10px;
+            }
         }
     </style>
 </head>
@@ -169,7 +189,7 @@
             Kiko Global Trade is your trusted partner in global expansion. Wherever you want to go, we take you there.
         </p>
         <img class="hero-image" src="images/Gemini_Generated.jpg" alt="Global Trade Port">
-        <a href="mailto:kikoglobaltrade@gmail.com" class="contact-button">
+        <a href="contact.html" class="contact-button">
             Contact Us
         </a>
     </section>
@@ -182,7 +202,7 @@
     </section>
 
     <footer class="footer">
-        © 2025 Kiko Global Trade. All Rights Reserved.
+        © 2026 Kiko Global Trade. All Rights Reserved.
     </footer>
 
 </body>
