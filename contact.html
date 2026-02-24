@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Contact - Kiko Global Trade</title>
+    <meta name="description" content="Get in touch with Kiko Global Trade. Contact our Orlando headquarters for expert global trade solutions, logistics, and international partnerships.">
+    <link rel="canonical" href="https://kikoglobal.trade/contact.html">
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
-            color: black; /* Texto preto */
+            color: #333; /* Cinza escuro para melhor leitura */
         }
         .top-bar {
             background-color: #D32F2F;
@@ -45,30 +49,43 @@
             text-decoration: underline;
         }
         .container {
-            max-width: 600px;
-            margin: auto;
+            max-width: 700px;
+            margin: 40px auto;
             padding: 50px 20px;
-            text-align: center;
+            background-color: white;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #D32F2F;
+            margin-bottom: 30px;
         }
         .contact-info {
             font-size: 18px;
             margin-bottom: 20px;
-            line-height: 1.6;
+            line-height: 1.8;
+            text-align: left;
+            display: inline-block;
         }
         .contact-info a {
             color: #D32F2F;
             text-decoration: none;
             font-weight: bold;
         }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        .linkedin-button {
-            display: inline-block;
+        .address-box {
             margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border-left: 4px solid #D32F2F;
+            text-align: left;
+        }
+        .linkedin-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
         }
         .linkedin-button img {
-            width: 50px; /* Tamanho do ícone */
+            width: 45px;
             height: auto;
             transition: transform 0.2s;
         }
@@ -78,31 +95,16 @@
         .footer {
             background-color: #333;
             color: white;
-            padding: 15px;
-            margin-top: 20px;
+            padding: 20px;
+            margin-top: 40px;
             text-align: center;
         }
 
-        /* ======= Ajuste Responsivo ======= */
         @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-            nav {
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 15px;
-            }
-            .container {
-                padding: 30px 10px;
-            }
-            .contact-info {
-                font-size: 16px;
-            }
-            .linkedin-button img {
-                width: 40px;
-            }
+            header { flex-direction: column; }
+            nav { flex-direction: column; gap: 10px; margin-top: 15px; }
+            .container { padding: 30px 15px; }
+            .contact-info { font-size: 16px; }
         }
     </style>
 </head>
@@ -125,14 +127,24 @@
 
     <section class="container">
         <h1>Contact Kiko Global Trade</h1>
-        <p class="contact-info">
-            📧 Email: <a href="mailto:contact@kikoglobal.trade">contact@kikoglobal.trade</a><br>
-            📞 Call Us: <a href="tel:+14074310938">(407) 431-0938</a>
-        </p>
+        
+        <div class="contact-info">
+            📧 <strong>Email:</strong> <a href="mailto:contact@kikoglobal.trade">contact@kikoglobal.trade</a><br>
+            📞 <strong>Call Us:</strong> <a href="tel:+14074310938">(407) 431-0938</a>
+        </div>
 
-        <a href="https://www.linkedin.com/company/98760959/admin/dashboard/" target="_blank" class="linkedin-button">
-            <img src="images/linkedin-icon.png" alt="LinkedIn">
-        </a>
+        <div class="address-box">
+            <strong>Global Headquarters:</strong><br>
+            100 East Pine Street, Suite 110<br>
+            Orlando, FL 32801, USA
+        </div>
+
+        <div class="linkedin-section">
+            <p>Follow our news on LinkedIn:</p>
+            <a href="https://www.linkedin.com/company/kiko-global-trade/" target="_blank" class="linkedin-button">
+                <img src="images/linkedin-icon.png" alt="LinkedIn Kiko Global Trade">
+            </a>
+        </div>
     </section>
 
     <footer class="footer">
