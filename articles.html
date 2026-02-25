@@ -1,298 +1,601 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles | Kiko Global Trade</title>
-    <meta name="description" content="International trade and industry insights by Marcelo Cavalcante dos Santos.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles | Kiko Global Trade</title>
+  <meta name="description" content="International trade and industry insights by Marcelo Cavalcante dos Santos.">
 
-    <style>
-        body {
-            font-family: Georgia, "Times New Roman", serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #111;
-        }
+  <!-- Optional: basic site-level structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Articles | Kiko Global Trade",
+    "description": "International trade and industry insights by Marcelo Cavalcante dos Santos."
+  }
+  </script>
 
-        .top-bar {
-            background-color: #D32F2F;
-            color: white;
-            padding: 10px;
-            font-size: 14px;
-            text-align: right;
-            padding-right: 20px;
-            font-family: Arial, sans-serif;
-        }
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #111;
+    }
 
-        header {
-            background-color: white;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #D32F2F;
-            font-family: Arial, sans-serif;
-        }
+    .top-bar {
+      background-color: #D32F2F;
+      color: white;
+      padding: 10px;
+      font-size: 14px;
+      text-align: right;
+      padding-right: 20px;
+      font-family: Arial, sans-serif;
+    }
 
-        .logo {
-            height: 60px;
-        }
+    header {
+      background-color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #D32F2F;
+      font-family: Arial, sans-serif;
+    }
 
-        nav {
-            display: flex;
-            gap: 20px;
-        }
+    .logo { height: 60px; }
 
-        nav a {
-            color: #D32F2F;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 15px;
-        }
+    nav { display: flex; gap: 20px; }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    nav a {
+      color: #D32F2F;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
 
-        .container {
-            max-width: 820px;
-            margin: 60px auto;
-            padding: 0 20px 60px 20px;
-            background-color: white;
-        }
+    nav a:hover { text-decoration: underline; }
 
-        .page-title {
-            text-align: center;
-            font-size: 34px;
-            margin-bottom: 60px;
-            color: #D32F2F;
-            font-family: Arial, sans-serif;
-        }
+    .container {
+      max-width: 860px;
+      margin: 60px auto;
+      padding: 0 20px 60px 20px;
+      background-color: white;
+    }
 
-        .article {
-            margin-bottom: 120px;
-        }
+    .page-title {
+      text-align: center;
+      font-size: 36px;
+      margin: 50px 0 18px 0;
+      color: #D32F2F;
+      font-family: Arial, sans-serif;
+    }
 
-        .article h2 {
-            font-size: 30px;
-            font-weight: normal;
-            margin-bottom: 10px;
-        }
+    .index {
+      margin: 0 0 70px 0;
+      padding: 20px;
+      background-color: #fafafa;
+      border-left: 4px solid #D32F2F;
+      font-family: Arial, sans-serif;
+    }
 
-        .meta {
-            font-size: 14px;
-            color: #666;
-            font-style: italic;
-            margin-bottom: 40px;
-        }
+    .index strong { display: block; margin-bottom: 12px; }
 
-        .article h3 {
-            font-size: 20px;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            font-weight: normal;
-        }
+    .index a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+      line-height: 1.3;
+    }
 
-        .article p {
-            font-size: 17px;
-            line-height: 1.85;
-            text-align: justify;
-            margin-bottom: 22px;
-        }
+    .index a:hover { text-decoration: underline; }
 
-        .original-source {
-            margin-top: 60px;
-            padding: 22px;
-            background-color: #f9f9f9;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            gap: 18px;
-            font-family: Arial, sans-serif;
-        }
+    .article { margin-bottom: 120px; }
 
-        .crasp-logo {
-            height: 54px;
-            width: auto;
-        }
+    .article h2 {
+      font-size: 30px;
+      font-weight: normal;
+      margin: 0 0 10px 0;
+    }
 
-        .source-text {
-            font-size: 14px;
-            color: #333;
-            line-height: 1.4;
-        }
+    .meta {
+      font-size: 14px;
+      color: #666;
+      font-style: italic;
+      margin-bottom: 40px;
+      font-family: Arial, sans-serif;
+    }
 
-        .source-text a {
-            color: #D32F2F;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .article h3 {
+      font-size: 20px;
+      margin: 40px 0 15px 0;
+      font-weight: normal;
+    }
 
-        .footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            font-size: 14px;
-            font-family: Arial, sans-serif;
-        }
+    .article p {
+      font-size: 17px;
+      line-height: 1.85;
+      text-align: justify;
+      margin: 0 0 22px 0;
+    }
 
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
+    .original-source {
+      margin-top: 60px;
+      padding: 22px;
+      background-color: #f9f9f9;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-family: Arial, sans-serif;
+    }
 
-            nav {
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 15px;
-            }
+    .crasp-logo { height: 54px; width: auto; }
 
-            .container {
-                margin: 30px 10px;
-            }
+    .source-text {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.4;
+    }
 
-            .original-source {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
+    .source-text a {
+      color: #D32F2F;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .source-text a:hover { text-decoration: underline; }
+
+    .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      header { flex-direction: column; text-align: center; }
+      nav { flex-direction: column; gap: 10px; margin-top: 15px; }
+      .container { margin: 30px 10px; }
+      .original-source { flex-direction: column; text-align: center; }
+    }
+  </style>
 </head>
 
 <body>
-
-<div class="top-bar">
+  <div class="top-bar">
     Phone: (407) 431-0938
-</div>
+  </div>
 
-<header>
+  <header>
     <img src="images/logo-kiko-global-trade.jpg" alt="Kiko Global Trade Logo" class="logo">
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="articles.html">Articles</a>
-        <a href="contact.html">Contact</a>
-        <a href="utilkiko.html">UTILKIKO</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="articles.html">Articles</a>
+      <a href="contact.html">Contact</a>
+      <a href="utilkiko.html">UTILKIKO</a>
     </nav>
-</header>
+  </header>
 
-<main class="container">
-
+  <main class="container">
     <h1 class="page-title">Industry Insights & International Trade Analysis</h1>
 
-    <!-- ARTICLE 1: 01/28/2026 (MOST RECENT) -->
-    <div class="article">
+    <div class="index">
+      <strong>Article Index</strong>
+      <a href="#marketplaces">Using Marketplaces to Internationalize Your Company, January 28, 2026</a>
+      <a href="#protein-crisis">Protein Crisis and Foreign Trade: A Strategic Warning for Brazil, June 30, 2025</a>
+      <a href="#brazil-usa">Brazil vs. USA: Tariffs, Taxes, and the Challenge of Trade Reciprocity, April 14, 2025</a>
+      <a href="#mercosur">Internationalization in Mercosur: Opportunities and Challenges for Managers, April 7, 2025</a>
+      <a href="#import-risk">Import Risk Management: How to Avoid Losses and Ensure Success in Operations, April 7, 2025</a>
+    </div>
 
-        <h2>Using Marketplaces to Internationalize Your Company</h2>
+    <!-- ================= ARTICLE 1 (MOST RECENT) ================= -->
+    <div class="article" id="marketplaces">
 
-        <div class="meta">
-            By Marcelo Cavalcante dos Santos | 01/28/2026
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Using Marketplaces to Internationalize Your Company",
+        "author": { "@type": "Person", "name": "Marcelo Cavalcante dos Santos" },
+        "datePublished": "2026-01-28",
+        "publisher": { "@type": "Organization", "name": "Kiko Global Trade" }
+      }
+      </script>
+
+      <h2>Using Marketplaces to Internationalize Your Company</h2>
+      <div class="meta">By Marcelo Cavalcante dos Santos | January 28, 2026</div>
+
+      <p>International expansion is no longer exclusive to large corporations. The advancement of global e-commerce, combined with modern logistics solutions and the efficient use of international marketplaces, now allows Brazilian small and medium-sized enterprises to access the U.S. market with speed, controlled risk, and strategic planning. Managers who understand these tools can choose between two distinct expansion paths, both effective, yet suited to different levels of investment and business maturity.</p>
+
+      <h3>1. Phased Model: Test the Market with Lower Risk</h3>
+
+      <p>The phased model is ideal for companies seeking to begin their international expansion cautiously. In this structure, the marketplace serves as a gateway, allowing products to be shipped directly from Brazil to the end customer in the United States. Lightweight, high value-added products such as footwear, handbags, and fashion jewelry perform particularly well under this model, as they offer strong margins, consistent demand, and immediate acceptance in the American e-commerce environment. Higher average order values help absorb international air freight costs while enabling fast delivery, keeping the operation simple and eliminating the need for inventory stored in the U.S.</p>
+
+      <p>This approach provides important advantages. It allows companies to validate their product catalog, understand consumer behavior, refine pricing strategies, and test specific market niches. All of this can be achieved with controlled exposure, since there is no initial need to invest in U.S. warehousing, local logistics partners, or operational infrastructure. The learning gained during this phase becomes a strategic foundation for future decisions.</p>
+
+      <h3>2. Structured Model: Scale Through Advanced Logistics</h3>
+
+      <p>The second path is designed for companies with greater investment capacity and a solid understanding of the U.S. market. Under this model, operations begin with the support of U.S.-based logistics partners, including warehousing services, fulfillment centers, and fast regional delivery networks. This infrastructure provides agility, operational stability, and immediate competitiveness, especially in categories such as fashion and accessories, where customer experience directly impacts sales performance.</p>
+
+      <p>Launching with local inventory and integrated logistics shortens delivery times, improves conversion rates, and positions the Brazilian brand at a higher competitive level from the outset. This model is recommended for companies that clearly understand their target audience and are prepared to operate at scale. It allows the business to enter the U.S. market with expanded presence and the operational capacity to handle higher order volumes.</p>
+
+      <h3>Strategic Considerations for Successful Internationalization</h3>
+
+      <p>To transform either model into a consistent international expansion project, managers should follow several essential best practices. The first step is conducting a strategic assessment to determine which structure aligns with the company’s current stage of development. Legal and tax compliance in the United States must be carefully mapped, including accurate customs classification and the proper handling of revenue in U.S. dollars. Marketplace selection should be based on visibility, analytics capabilities, and scalability features.</p>
+
+      <p>Institutional initiatives such as those provided by ApexBrasil play a meaningful role in this process, offering training, technical guidance, and structured support to Brazilian companies seeking secure and well-planned access to the U.S. market. This type of assistance helps mitigate risks, expand knowledge, and prepare managers for each phase of international growth.</p>
+
+      <p>Logistics must remain competitive, whether through direct air freight in the initial phase or through domestic partners once volume increases. Finally, managers should define key performance indicators that signal the appropriate time to transition from the phased model to a structured operation, ensuring that growth occurs progressively and sustainably.</p>
+
+      <h3>Conclusion</h3>
+
+      <p>The choice between these two models depends on the company’s stage, managerial clarity, and capital availability. Some businesses may begin with a fully structured operation, while others prefer to start with a phased approach to gain experience before scaling. What remains fundamental is understanding that the U.S. market is significantly larger than the Brazilian market, particularly for high value products, and offers real opportunities for growth and diversification.</p>
+
+      <p>The combination of global marketplaces, efficient air logistics, institutional support, and specialized partners has made internationalization more accessible, professional, and strategically viable. Today, Brazilian small and medium-sized enterprises can compete in one of the largest markets in the world through planning, organization, and long-term vision. The next step for business leaders is to evaluate their investment capacity, define their entry strategy, and determine which model best aligns with their company’s current moment.</p>
+
+      <p><strong>Marcelo Cavalcante dos Santos</strong></p>
+
+      <div class="original-source">
+        <img src="images/logo_crasp_home.png" alt="CRASP Logo" class="crasp-logo">
+        <div class="source-text">
+          Originally published by the Regional Administration Council of São Paulo (CRASP).<br>
+          Read the original Portuguese version:
+          <a href="https://www.crasp.gov.br/admpro/site/artigos/marcelo-dos-santos-marketplace-internacional" target="_blank">
+            CRASP – International Marketplace
+          </a>
         </div>
+      </div>
 
-        <p>International expansion is no longer exclusive to large corporations. The advancement of global e-commerce, combined with modern logistics solutions and the efficient use of international marketplaces, now allows Brazilian small and medium-sized enterprises to access the U.S. market with speed, controlled risk, and strategic planning. Managers who understand these tools can choose between two distinct expansion paths, both effective, yet suited to different levels of investment and business maturity.</p>
+    </div>
+        <!-- ================= ARTICLE 2 ================= -->
+    <div class="article" id="protein-crisis">
 
-        <h3>1. Phased Model: Test the Market with Lower Risk</h3>
-        <p>The phased model is ideal for companies seeking to begin their international expansion cautiously. In this structure, the marketplace serves as a gateway, allowing products to be shipped directly from Brazil to the end customer in the United States. Lightweight, high value-added products such as footwear, handbags, and fashion jewelry perform particularly well under this model, as they offer strong margins, consistent demand, and immediate acceptance in the American e-commerce environment. Higher average order values help absorb international air freight costs while enabling fast delivery, keeping the operation simple and eliminating the need for inventory stored in the U.S.</p>
-        <p>This approach provides important advantages. It allows companies to validate their product catalog, understand consumer behavior, refine pricing strategies, and test specific market niches. All of this can be achieved with controlled exposure, since there is no initial need to invest in U.S. warehousing, local logistics partners, or operational infrastructure. The learning gained during this phase becomes a strategic foundation for future decisions.</p>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Protein Crisis and Foreign Trade: A Strategic Warning for Brazil",
+        "author": { "@type": "Person", "name": "Marcelo Cavalcante dos Santos" },
+        "datePublished": "2025-06-30",
+        "publisher": { "@type": "Organization", "name": "Kiko Global Trade" }
+      }
+      </script>
 
-        <h3>2. Structured Model: Scale Through Advanced Logistics</h3>
-        <p>The second path is designed for companies with greater investment capacity and a solid understanding of the U.S. market. Under this model, operations begin with the support of U.S.-based logistics partners, including warehousing services, fulfillment centers, and fast regional delivery networks. This infrastructure provides agility, operational stability, and immediate competitiveness, especially in categories such as fashion and accessories, where customer experience directly impacts sales performance.</p>
-        <p>Launching with local inventory and integrated logistics shortens delivery times, improves conversion rates, and positions the Brazilian brand at a higher competitive level from the outset. This model is recommended for companies that clearly understand their target audience and are prepared to operate at scale. It allows the business to enter the U.S. market with expanded presence and the operational capacity to handle higher order volumes.</p>
+      <h2>Protein Crisis and Foreign Trade: A Strategic Warning for Brazil</h2>
+      <div class="meta">By Marcelo Cavalcante dos Santos | June 30, 2025</div>
 
-        <h3>Strategic Considerations for Successful Internationalization</h3>
-        <p>To transform either model into a consistent international expansion project, managers should follow several essential best practices. The first step is conducting a strategic assessment to determine which structure aligns with the company’s current stage of development. Legal and tax compliance in the United States must be carefully mapped, including accurate customs classification and the proper handling of revenue in U.S. dollars. Marketplace selection should be based on visibility, analytics capabilities, and scalability features.</p>
-        <p>Institutional initiatives such as those provided by ApexBrasil play a meaningful role in this process, offering training, technical guidance, and structured support to Brazilian companies seeking secure and well-planned access to the U.S. market. This type of assistance helps mitigate risks, expand knowledge, and prepare managers for each phase of international growth.</p>
-        <p>Logistics must remain competitive, whether through direct air freight in the initial phase or through domestic partners once volume increases. Finally, managers should define key performance indicators that signal the appropriate time to transition from the phased model to a structured operation, ensuring that growth occurs progressively and sustainably.</p>
+      <p>In recent years, international trade has evolved beyond a mechanism for balancing supply and demand. It now plays a decisive role in global food price instability. The surge in essential food prices, such as eggs and meat, reflects not only sanitary or climate shocks, but also a combination of economic, political, and structural factors that are reshaping global production and consumption dynamics.</p>
 
-        <h3>Conclusion</h3>
-        <p>The choice between these two models depends on the company’s stage, managerial clarity, and capital availability. Some businesses may begin with a fully structured operation, while others prefer to start with a phased approach to gain experience before scaling. What remains fundamental is understanding that the U.S. market is significantly larger than the Brazilian market, particularly for high value products, and offers real opportunities for growth and diversification.</p>
-        <p>The combination of global marketplaces, efficient air logistics, institutional support, and specialized partners has made internationalization more accessible, professional, and strategically viable. Today, Brazilian small and medium-sized enterprises can compete in one of the largest markets in the world through planning, organization, and long-term vision. The next step for business leaders is to evaluate their investment capacity, define their entry strategy, and determine which model best aligns with their company’s current moment.</p>
+      <p>For Brazil, a major agricultural exporter, this environment presents both opportunity and risk. On one hand, the country benefits from higher international commodity prices. On the other, it faces domestic inflationary pressure that challenges access to affordable, high-quality protein.</p>
 
-        <p><strong>Marcelo Cavalcante dos Santos</strong></p>
+      <h3>Causes and Crisis Dynamics</h3>
 
-        <div class="original-source">
-            <img src="images/logo_crasp_home.png" alt="CRASP Logo" class="crasp-logo">
-            <div class="source-text">
-                Originally published by the Regional Administration Council of São Paulo (CRASP).<br>
-                Read the original Portuguese version:
-                <a href="https://www.crasp.gov.br/admpro/site/artigos/marcelo-dos-santos-marketplace-internacional" target="_blank">
-                    CRASP – International Marketplace
-                </a>
-            </div>
+      <p>The global protein crisis goes beyond isolated outbreaks or weather events. In countries such as the United States, the United Kingdom, and Argentina, avian influenza and severe droughts disrupted production. At the same time, tariffs on fertilizers and agricultural inputs increased logistical costs, tightening supply chains and driving prices upward.</p>
+
+      <p>Brazil expanded exports of eggs and meat, recording double-digit FOB growth between 2022 and 2023 in response to external demand. However, this expansion reduced domestic supply. Without fiscal or regulatory cushioning mechanisms, such as those adopted in Spain and Mexico, Brazilian consumers absorbed the full impact of global scarcity and inflation.</p>
+
+      <h3>Consumption Shifts and the Cascade Effect</h3>
+
+      <p>This pattern is not unique to Brazil. Globally, rising beef prices led consumers to substitute toward eggs, traditionally more affordable and accessible. While economically rational, this substitution created secondary pressure, increasing the price of the substitute itself.</p>
+
+      <p>In countries such as Argentina and Mexico, per capita egg consumption surpassed 360 units annually. In Spain, eggs were among the fastest-growing food categories in 2023. The result is a chain reaction: when meat prices rise, egg prices follow. This phenomenon can be described as a “food cascade effect,” in which pressure on one protein source disrupts the entire supply chain.</p>
+
+      <h3>The Strategic Role of Foreign Trade</h3>
+
+      <p>Exports remain vital to Brazil’s economy. They generate foreign currency inflows, attract investment, and reinforce geopolitical positioning. However, export policy cannot ignore domestic consequences. Strategies focused solely on maximizing trade surpluses overlook the social function of food as an essential good.</p>
+
+      <p>Public and private leaders must act as moderators between international efficiency and domestic stability. The objective is not to restrict exports, but to balance priorities responsibly.</p>
+
+      <h3>Proposed Solution: Tax Policy as a Stabilizing Tool</h3>
+
+      <p>Within this context, revising the tax structure on essential foods becomes central. External sales benefit from exchange rate advantages and fiscal incentives, while domestic consumption often carries tax burdens that distort prices.</p>
+
+      <p>A rebalanced fiscal policy could reduce taxes on essential proteins in the domestic market, restoring affordability and encouraging a natural rebalancing of consumption patterns. If beef becomes more accessible again, pressure on eggs, poultry, and pork would likely ease, mitigating the cascade effect.</p>
+
+      <p>Sectoral resistance may arise, yet the social, economic, and nutritional benefits outweigh potential objections. Food security is not merely public policy; it is an element of national sovereignty.</p>
+
+      <h3>Conclusion</h3>
+
+      <p>The global rise in egg prices reveals more than temporary scarcity. It reflects a socioeconomic chain reaction. Higher meat prices pushed millions toward eggs; increased demand, combined with sanitary outbreaks and trade imbalances, raised egg prices as well. In an interconnected world, foreign trade is no longer just an economic tool. It directly influences cost of living and domestic consumption stability.</p>
+
+      <p>For Brazil, the lesson is clear. Export efficiency must be aligned with internal price stabilization policies. Export advantages stem not only from currency differences, but also from fiscal structures that strongly incentivize external sales. Therefore, policymakers should seriously reassess the tax framework applied to essential proteins to restore balance between production, domestic consumption, and competitiveness.</p>
+
+      <p>A fairer tax strategy would expand domestic access to protein and allow prices to adjust gradually and systemically. If beef returns to middle-class affordability, a natural balancing effect may emerge, easing pressure on eggs, poultry, and pork. The result would be a virtuous cycle in which Brazil maintains its global relevance as a food supplier while safeguarding domestic supply and purchasing power.</p>
+
+      <div class="original-source">
+        <img src="images/logo_crasp_home.png" alt="CRASP Logo" class="crasp-logo">
+        <div class="source-text">
+          Originally published by the Regional Administration Council of São Paulo (CRASP).<br>
+          Read the original Portuguese version:
+          <a href="https://www.crasp.gov.br/admpro/site/artigos/crise-das-proteinas-e-comercio-exterior" target="_blank">
+            CRASP – Protein Crisis and Foreign Trade
+          </a>
         </div>
+      </div>
 
     </div>
 
+    <!-- ================= ARTICLE 3 ================= -->
+    <div class="article" id="brazil-usa">
 
-    <!-- ARTICLE 2: 06/30/2025 -->
-    <div class="article">
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Brazil vs. USA: Tariffs, Taxes, and the Challenge of Trade Reciprocity",
+        "author": { "@type": "Person", "name": "Marcelo Cavalcante dos Santos" },
+        "datePublished": "2025-04-14",
+        "publisher": { "@type": "Organization", "name": "Kiko Global Trade" }
+      }
+      </script>
 
-        <h2>Protein Crisis and Foreign Trade: A Strategic Warning for Brazil</h2>
+      <h2>Brazil vs. USA: Tariffs, Taxes, and the Challenge of Trade Reciprocity</h2>
+      <div class="meta">By Marcelo Cavalcante dos Santos | April 14, 2025</div>
 
-        <div class="meta">
-            By Marcelo Cavalcante dos Santos | 06/30/2025
+      <p>In recent years, trade relations between Brazil and the United States have undergone significant changes. The protectionist turn of the Trump administration, in 2018, evidenced a historical asymmetry in bilateral exchanges, which is often ignored outside of technical and diplomatic circles.</p>
+
+      <h3>A Brazil that benefited, up to a certain point</h3>
+
+      <p>For decades, Brazil benefited from the Generalized System of Preferences (GSP), which offered reduced tariffs or total exemption to products from developing countries. This favored the competitiveness of goods such as green coffee, granite, citric acid, and orange juice in the American market. With this facilitated access, Brazil consolidated itself as a supplier of non-manufactured goods, ensuring its presence in specific production chains.</p>
+
+      <h3>On the other side, a closed market</h3>
+
+      <p>While Brazilian products entered the USA with relative ease, the reverse path was more difficult. The Brazilian tax structure, composed of Import Tax, IPI, PIS/COFINS, and ICMS, raises the cost of foreign products by more than 60%. An emblematic example is the Xbox Series X console. In the USA, it costs US$ 499.99, about R$ 2,919.94, but in Brazil, it reaches R$ 6,899.99. Furthermore, the country adopted anti-dumping measures against American products, such as ethanol and plastic resins, protecting domestic sectors even in areas with strong global competition.</p>
+
+      <h3>The 2018 turn: steel, aluminum, and the end of concessions</h3>
+
+      <p>In 2018, under the justification of economic security, the USA imposed tariffs of 25% on steel and 10% on aluminum, based on Section 232 of American legislation. Brazil was directly hit and, furthermore, lost access to the GSP, seeing its products face new barriers. In 2017, the country exported about US$ 2.6 billion in semi-finished steel to the USA. With the new rules, this volume began to face quotas and surcharges.</p>
+
+      <h3>When diplomacy makes a difference: the Canadian example</h3>
+
+      <p>Canada was also affected, but responded with direct diplomatic articulation. In 2019, the USA suspended tariffs on Canadian steel and reduced the tariff on aluminum to 10%. The Canadians highlighted the production integration and industrial interdependence with the USA, and they obtained success.</p>
+
+      <h3>2025: the tariff tension returns</h3>
+
+      <p>With the return of Donald Trump to the presidency, April 2025 marked the resumption of a stricter tariff policy. A base tariff of 10% began to be applied to most imports, including those from Brazil. The tariffs of 25% on Brazilian steel and aluminum were maintained. Countries like China and Vietnam suffered even heavier sanctions, with tariffs reaching 54%. In Brazil, the impact was immediate, strategic sectors are pressuring the government for response measures, and the theme has returned to the economic and diplomatic agenda.</p>
+
+      <h3>Brazilian aluminum: from problem to opportunity</h3>
+
+      <p>In the midst of tensions, the aluminum sector may represent a competitive advantage. Brazil occupies the 9th position worldwide, with more than 1.1 million metric tons produced in 2023, the majority with clean energy, mainly hydroelectric. In a scenario of valuing sustainable chains and low carbon emissions, this characteristic becomes a strategic differentiator. With R$ 30 billion in investments planned until the end of 2025, the sector seeks to expand its global competitiveness. Faced with instability with China and Russia, Brazil can present itself as a reliable and geopolitically neutral alternative.</p>
+
+      <h3>Time to act: Brazil can lead the negotiation</h3>
+
+      <p>Different from 2019, when Canada acted with speed, Brazil now has the opportunity to adopt a more assertive posture. Two paths stand out:</p>
+
+      <p>Resume bilateral negotiations with the USA, seeking tariff revision or preferential access;</p>
+
+      <p>Use the environmental appeal, promoting Brazilian aluminum as a clean product aligned with ESG requirements.</p>
+
+      <p>The junction between strategic diplomacy and environmental differentiation can transform a crisis into an opportunity.</p>
+
+      <h3>Conclusion: reciprocity requires strategy</h3>
+
+      <p>The trade relationship between Brazil and the United States has always had imbalances, but this is not immutable. The Canadian example shows that barriers can be overcome with intelligent articulation. The case of aluminum reveals that real advantages, such as sustainability, can be levers for repositioning. Brazil has productive strength, political capital, and environmental credentials to lead this movement. The moment demands assertiveness. It is time to act, and stop playing only on the defense.</p>
+
+      <div class="original-source">
+        <img src="images/logo_crasp_home.png" alt="CRASP Logo" class="crasp-logo">
+        <div class="source-text">
+          Originally published by the Regional Administration Council of São Paulo (CRASP).<br>
+          Read the original Portuguese version:
+          <a href="https://www.crasp.gov.br/admpro/site/artigos/marcelo-cavalcante-brasil-estados-unidos" target="_blank">
+            CRASP – Brazil vs. United States
+          </a>
         </div>
+      </div>
 
-        <p>In recent years, international trade has evolved beyond a mechanism for balancing supply and demand. It now plays a decisive role in global food price instability. The surge in essential food prices, such as eggs and meat, reflects not only sanitary or climate shocks, but also a combination of economic, political, and structural factors that are reshaping global production and consumption dynamics.</p>
+    </div>
+        <!-- ================= ARTICLE 4 ================= -->
+    <div class="article" id="mercosur">
 
-        <p>For Brazil, a major agricultural exporter, this environment presents both opportunity and risk. On one hand, the country benefits from higher international commodity prices. On the other, it faces domestic inflationary pressure that challenges access to affordable, high-quality protein.</p>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Internationalization in Mercosur: Opportunities and Challenges for Managers",
+        "author": { "@type": "Person", "name": "Marcelo Cavalcante dos Santos" },
+        "datePublished": "2025-04-07",
+        "publisher": { "@type": "Organization", "name": "Kiko Global Trade" }
+      }
+      </script>
 
-        <h3>Causes and Crisis Dynamics</h3>
+      <h2>Internationalization in Mercosur: Opportunities and Challenges for Managers</h2>
+      <div class="meta">By Marcelo Cavalcante dos Santos | April 7, 2025</div>
 
-        <p>The global protein crisis goes beyond isolated outbreaks or weather events. In countries such as the United States, the United Kingdom, and Argentina, avian influenza and severe droughts disrupted production. At the same time, tariffs on fertilizers and agricultural inputs increased logistical costs, tightening supply chains and driving prices upward.</p>
+      <p>Expanding your business into international markets is a natural and sometimes crucial path for some companies, especially for those seeking sustainable growth. Mercosur, formed by Brazil, Argentina, Paraguay, and Uruguay, is a strategic option, combining geographical proximity, trade advantages, and a consumer base of over 270 million people.</p>
 
-        <p>Brazil expanded exports of eggs and meat, recording double-digit FOB growth between 2022 and 2023 in response to external demand. However, this expansion reduced domestic supply. Without fiscal or regulatory cushioning mechanisms, such as those adopted in Spain and Mexico, Brazilian consumers absorbed the full impact of global scarcity and inflation.</p>
+      <p>But why invest in Mercosur? And how can you ensure that this expansion occurs successfully? For managers, understanding the particularities of the bloc, adapting strategies, and overcoming operational challenges is essential to ensure competitiveness and efficiency.</p>
 
-        <h3>Consumption Shifts and the Cascade Effect</h3>
+      <h3>Benefits of expanding to Mercosur</h3>
 
-        <p>This pattern is not unique to Brazil. Globally, rising beef prices led consumers to substitute toward eggs, traditionally more affordable and accessible. While economically rational, this substitution created secondary pressure, increasing the price of the substitute itself.</p>
+      <p>Internationalizing within Mercosur offers important advantages:</p>
 
-        <p>In countries such as Argentina and Mexico, per capita egg consumption surpassed 360 units annually. In Spain, eggs were among the fastest-growing food categories in 2023. The result is a chain reaction: when meat prices rise, egg prices follow. This phenomenon can be described as a “food cascade effect,” in which pressure on one protein source disrupts the entire supply chain.</p>
+      <p>Fewer trade barriers: companies in the automotive and food sectors, for example, already benefit from tariff reductions and greater agility in transactions;</p>
 
-        <h3>The Strategic Role of Foreign Trade</h3>
+      <p>Logistical and cultural proximity: transport time and the costs of adapting products to the local market are reduced;</p>
 
-        <p>Exports remain vital to Brazil’s economy. They generate foreign currency inflows, attract investment, and reinforce geopolitical positioning. However, export policy cannot ignore domestic consequences. Strategies focused solely on maximizing trade surpluses overlook the social function of food as an essential good.</p>
+      <p>Advantageous trade agreements: strategic sectors such as agribusiness receive incentives that facilitate exports;</p>
 
-        <p>Public and private leaders must act as moderators between international efficiency and domestic stability. The objective is not to restrict exports, but to balance priorities responsibly.</p>
+      <p>Market diversification: companies reduce dependence on Brazilian domestic consumption, mitigating economic risks.</p>
 
-        <h3>Proposed Solution: Tax Policy as a Stabilizing Tool</h3>
+      <h3>The role of the manager in expanding to Mercosur</h3>
 
-        <p>Within this context, revising the tax structure on essential foods becomes central. External sales benefit from exchange rate advantages and fiscal incentives, while domestic consumption often carries tax burdens that distort prices.</p>
+      <p>Entering foreign markets requires a strategic approach, with early business planning. Here are the main aspects a manager should consider:</p>
 
-        <p>A rebalanced fiscal policy could reduce taxes on essential proteins in the domestic market, restoring affordability and encouraging a natural rebalancing of consumption patterns. If beef becomes more accessible again, pressure on eggs, poultry, and pork would likely ease, mitigating the cascade effect.</p>
+      <h3>1. Market analysis and entry strategy</h3>
 
-        <p>Sectoral resistance may arise, yet the social, economic, and nutritional benefits outweigh potential objections. Food security is not merely public policy; it is an element of national sovereignty.</p>
+      <p>Before expanding, it is essential to understand the local environment:</p>
 
-        <h3>Conclusion</h3>
+      <p>Who are the main competitors?</p>
 
-        <p>The global rise in egg prices reveals more than temporary scarcity. It reflects a socioeconomic chain reaction. Higher meat prices pushed millions toward eggs; increased demand, combined with sanitary outbreaks and trade imbalances, raised egg prices as well. In an interconnected world, foreign trade is no longer just an economic tool. It directly influences cost of living and domestic consumption stability.</p>
+      <p>How do consumers prefer to buy?</p>
 
-        <p>For Brazil, the lesson is clear. Export efficiency must be aligned with internal price stabilization policies. Export advantages stem not only from currency differences, but also from fiscal structures that strongly incentivize external sales. Therefore, policymakers should seriously reassess the tax framework applied to essential proteins to restore balance between production, domestic consumption, and competitiveness.</p>
+      <p>What are the regulatory and customs requirements?</p>
 
-        <p>A fairer tax strategy would expand domestic access to protein and allow prices to adjust gradually and systemically. If beef returns to middle-class affordability, a natural balancing effect may emerge, easing pressure on eggs, poultry, and pork. The result would be a virtuous cycle in which Brazil maintains its global relevance as a food supplier while safeguarding domestic supply and purchasing power.</p>
+      <p>Based on these answers, the company can decide between direct export, strategic partnerships, or even opening local units, as there are many companies taking advantage of the benefits in Paraguay and Uruguay.</p>
 
-        <div class="original-source">
-            <img src="images/logo_crasp_home.png" alt="CRASP Logo" class="crasp-logo">
-            <div class="source-text">
-                Originally published by the Regional Administration Council of São Paulo (CRASP).<br>
-                Read the original Portuguese version:
-                <a href="https://www.crasp.gov.br/admpro/site/artigos/crise-das-proteinas-e-comercio-exterior" target="_blank">
-                    CRASP – Protein Crisis and Foreign Trade
-                </a>
-            </div>
+      <h3>2. Legal and tax issues</h3>
+
+      <p>Each country in the bloc has its own rules. The manager needs to understand:</p>
+
+      <p>Taxation: the import tax on products can vary;</p>
+
+      <p>Labor legislation: hiring local employees may have specific requirements;</p>
+
+      <p>Certifications: some industries require special regulations.</p>
+
+      <h3>3. Logistics and supply chain</h3>
+
+      <p>Efficiency in distribution is essential for success. Consider:</p>
+
+      <p>Delivery times in the door-to-door model;</p>
+
+      <p>The best transport mode, whether road, rail, or sea;</p>
+
+      <p>Strategically located inventories to reduce costs;</p>
+
+      <p>Digital monitoring to avoid delays and losses.</p>
+
+      <h3>4. Cultural and commercial adaptation</h3>
+
+      <p>Even with similarities between the countries, each market has specificities:</p>
+
+      <p>Marketing and communication adjusted to the local audience;</p>
+
+      <p>Products customized for regional preferences;</p>
+
+      <p>Understanding consumer behavior to maximize sales.</p>
+
+      <h3>Main challenges and how to overcome them</h3>
+
+      <p>Despite the opportunities, some barriers can hinder expansion:</p>
+
+      <p>Bureaucracy and unstable regulation: political changes affect rules and tariffs. Monitoring legislation and having legal support is essential;</p>
+
+      <p>Exchange rate oscillation: differences in currencies impact pricing. Companies can adopt hedge contracts to minimize risks;</p>
+
+      <p>Infrastructure and logistics: highways and ports can represent challenges. Local partnerships help optimize costs.</p>
+
+      <p>Apex-Brasil and Bilateral Chambers of Commerce are strategic allies to facilitate the process.</p>
+
+      <h3>Conclusion</h3>
+
+      <p>Expanding to Mercosur is a viable strategy for Brazilian companies, but it requires planning and adaptation. Managers who master this process add value to organizations and expand their opportunities in the job market. A good project opens space for both small and large entrepreneurs.</p>
+
+      <p>Internationalization is a challenge, but for those who prepare well, it is also a great opportunity for growth and consolidation in the global market.</p>
+
+      <div class="original-source">
+        <img src="images/logo_crasp_home.png" alt="CRASP Logo" class="crasp-logo">
+        <div class="source-text">
+          Originally published by the Regional Administration Council of São Paulo (CRASP).<br>
+          Read the original Portuguese version:
+          <a href="https://www.crasp.gov.br/admpro/site/artigos/internacionalizacao-no-mercosul-oportunidades-e-desafios-para-gestores" target="_blank">
+            CRASP – Internationalization in Mercosur
+          </a>
         </div>
+      </div>
 
     </div>
 
-</main>
+    <!-- ================= ARTICLE 5 ================= -->
+    <div class="article" id="import-risk">
 
-<footer class="footer">
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Import Risk Management: How to Avoid Losses and Ensure Success in Operations",
+        "author": { "@type": "Person", "name": "Marcelo Cavalcante dos Santos" },
+        "datePublished": "2025-04-07",
+        "publisher": { "@type": "Organization", "name": "Kiko Global Trade" }
+      }
+      </script>
+
+      <h2>Import Risk Management: How to Avoid Losses and Ensure Success in Operations</h2>
+      <div class="meta">By Marcelo Cavalcante dos Santos | April 7, 2025</div>
+
+      <p>Importing is an essential process for many Brazilian companies seeking competitiveness in the global market. However, those who work in foreign trade know that this path is full of challenges and risks that can compromise everything from financial planning to product delivery. Among the most common problems, one of the most concerning is the possibility of not receiving the purchased goods.</p>
+
+      <p>What happens when an importer pays for an order and the goods never arrive? Or when the product is held at customs due to documentation issues? These situations can generate significant financial and operational losses, impacting the company's entire workflow. The good news is that, with efficient risk management, it is possible to avoid unpleasant surprises and ensure that the import process occurs without major setbacks.</p>
+
+      <p>In this article, we will address the main risks involved in importing and how the administrator can act strategically to prevent them.</p>
+
+      <h3>The Main Risks of Importing</h3>
+
+      <h3>The importer's nightmare: what if the product never arrives?</h3>
+
+      <p>Imagine the following situation: a Brazilian company closes a contract with a foreign supplier, makes the payment, and waits for the delivery of the goods. The deadline passes, the cargo does not arrive, and the supplier disappears or does not provide convincing answers. Unfortunately, this type of scam happens more often than one might imagine.</p>
+
+      <p>This problem can occur for various reasons: supplier fraud, issues with carriers, customs retention due to documentation errors, or even cargo loss.</p>
+
+      <p>How to avoid it? Before closing any deal, it is essential to perform due diligence on the supplier. This means researching the company's history, checking if it holds certifications, verifying its market reputation, and, whenever possible, seeking references from other clients. Furthermore, more secure payment methods, such as a Letter of Credit, can ensure that the money is only released to the supplier after confirmation of the correct shipment of the goods.</p>
+
+      <h3>The impact of exchange rate variation and unexpected costs</h3>
+
+      <p>Another factor that can turn an import into a nightmare is exchange rate oscillation. The price of the dollar can change significantly between the moment of purchase and the final payment, impacting the planned budget. In addition, unexpected fees and extra costs can appear in the middle of the process, such as port tariffs or unforeseen customs requirements.</p>
+
+      <p>To reduce this risk, companies that import regularly need to adopt exchange rate protection strategies, such as forward exchange contracts and hedge operations. It is also essential to have financial planning that includes a safety margin to cover cost variations.</p>
+
+      <h3>Customs problems: what to do when the cargo is held?</h3>
+
+      <p>Many importers have experienced the frustration of seeing their cargo stuck at customs due to documentary or regulatory issues. Missing licenses, errors in tax classification, or sanitary requirements can result in the retention or even the seizure of the goods.</p>
+
+      <p>This risk can be avoided with planning and specialized advice. Before importing, it is fundamental to understand the rules of the Federal Revenue and the regulations of Anvisa, MAPA (Ministry of Agriculture), or other regulatory bodies, depending on the type of product. Having an experienced customs broker and reviewing documentation before shipment are essential practices to avoid customs problems.</p>
+
+      <h3>Delivery delays and logistical losses</h3>
+
+      <p>Even if the supplier is reliable and the documentation is in order, import logistics can face unexpected challenges. Port strikes, weather problems, failures in sea or air transport, and even cargo theft can delay the arrival of products or cause irreversible losses.</p>
+
+      <p>To minimize this risk, the ideal approach is to diversify suppliers and transport routes whenever possible. Additionally, taking out international cargo insurance can ensure that, even in the face of unexpected problems, the company does not suffer irreparable losses.</p>
+
+      <h3>Management Strategies to Avoid Losses in Importing</h3>
+
+      <p>Given so many risks, how can the administrator act to make importing safer and more efficient? Some best practices can make all the difference:</p>
+
+      <p>Research and validate your suppliers: use company verification platforms, request product samples before closing contracts, and prefer suppliers who have international certifications;</p>
+
+      <p>Use secure contracts and payment methods: opt for clear contracts, with clauses that guarantee delivery within the deadline and expected quality. Use instruments like a Letter of Credit for greater financial security;</p>
+
+      <p>Monitor your cargo during transport: tracking tools and supply chain auditing help reduce risks and allow for quick action in case of problems;</p>
+
+      <p>Plan financially for exchange rate variations: work with currency hedging and maintain financial planning that accounts for possible fluctuations;</p>
+
+      <p>Stay updated on customs regulations: a small documentary error can mean delays and fines. Always being in compliance with legislation is essential to avoid trouble;</p>
+
+      <p>Have a contingency plan: always have alternative suppliers, backup logistical routes, and cargo insurance to minimize losses in adverse situations.</p>
+
+      <h3>Conclusion</h3>
+
+      <p>Importing is a strategic process for many companies, but the risks involved can create major challenges. The administrator working in this sector needs to adopt preventive measures, seek reliable suppliers, structure secure contracts, and stay updated on regulatory requirements.</p>
+
+      <p>With good risk management, it is possible to minimize losses and make importing safer, more efficient, and more profitable. After all, successful importing does not depend only on finding a good price, but on ensuring that the goods actually reach their destination and within the expected conditions.</p>
+
+      <div class="original-source">
+        <img src="images/logo_crasp_home.png" alt="CRASP Logo" class="crasp-logo">
+        <div class="source-text">
+          Originally published by the Regional Administration Council of São Paulo (CRASP).<br>
+          Read the original Portuguese version:
+          <a href="https://www.crasp.gov.br/admpro/site/artigos/gestao-de-riscos-em-importacao-como-evitar-prejuizos-e-garantir-o-sucesso-nas-operacoes" target="_blank">
+            CRASP – Import Risk Management
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
     &copy; 2026 Kiko Global Trade. All Rights Reserved.
-</footer>
+  </footer>
 
 </body>
 </html>
