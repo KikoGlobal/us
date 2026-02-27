@@ -89,18 +89,14 @@
             color: #D32F2F;
         }
 
-        .text-center {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
         .content-section {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin: 50px auto;
+            margin: 50px auto 25px auto;
             max-width: 1100px;
             padding: 0 20px;
+            text-align: left;
         }
 
         .content-section img {
@@ -113,6 +109,11 @@
             text-align: justify;
         }
 
+        .util-text-content h2 {
+            color: #D32F2F;
+            margin-top: 0;
+        }
+
         .flag-link {
             display: inline-flex;
             align-items: center;
@@ -120,18 +121,36 @@
             font-weight: bold;
             text-decoration: none;
             color: #333;
-            margin-top: 20px;
+            margin-top: 18px;
         }
 
         .flag-link img {
             height: 22px;
         }
 
+        /* FULL-WIDTH CATALOG IMAGE SECTION */
+        .catalog-full {
+            max-width: 1100px;
+            margin: 0 auto 25px auto;
+            padding: 0 20px;
+        }
+
+        .catalog-full a {
+            display: block;
+        }
+
+        .catalog-full img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
         .footer {
             background-color: #333;
             color: white;
             padding: 15px;
-            margin-top: 20px;
+            margin-top: 10px;
             text-align: center;
         }
 
@@ -144,6 +163,7 @@
         @media (max-width: 768px) {
             header { flex-direction: column; text-align: center; }
             nav { flex-direction: column; gap: 10px; margin-top: 15px; }
+
             .container, .content-section {
                 flex-direction: column;
                 text-align: center;
@@ -154,6 +174,10 @@
             }
             .content-section img {
                 max-width: 90%;
+            }
+
+            .catalog-full {
+                padding: 0 10px;
             }
         }
     </style>
@@ -200,21 +224,22 @@
     <img src="images/kiko-embalagens-qualidade.png" alt="Kiko Embalagens Qualidade">
     <div class="util-text-content">
         <h2>Util Kiko – Industrial Foundation</h2>
-        <p>With more than five decades of experience and a structured internal team, Util Kiko serves food retail networks throughout Brazil. Its operations are focused on reliability, scale, and consistent product quality.</p>
+        <p>With more than five decades of experience and a structured internal team, Util Kiko serves food retail networks throughout Brazil. Its operations are built around reliability, scale, and consistent product quality.</p>
         <p>The portfolio includes disposable food packaging, household items, and related consumer goods distributed nationally and to neighboring countries.</p>
         <p>The company maintains an extensive catalog and a distribution structure capable of serving major retail chains across the country.</p>
 
         <a href="http://www.kiko.ind.br/" target="_blank" class="flag-link">
             <img src="images/brazilflag.png" alt="Brazil Flag">
-            Visit Official Brazilian Website
-        </a>
-
-        <br><br>
-
-        <a href="http://utilkiko.com.br/en/disposable.pdf" target="_blank">
-            <img src="images/Kiko-Global-base.png" alt="Download Catalog" style="max-width:100%; height:auto;">
+            Brazilian Corporate Website
         </a>
     </div>
+</section>
+
+<!-- FULL-WIDTH CATALOG IMAGE ABOVE FOOTER -->
+<section class="catalog-full">
+    <a href="http://utilkiko.com.br/en/disposable.pdf" target="_blank">
+        <img src="images/Kiko-Global-base.png" alt="Download Product Catalog">
+    </a>
 </section>
 
 <footer class="footer">
