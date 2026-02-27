@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Kiko Global Trade - Professional Global Trade Solutions</title>
-    <meta name="description" content="Expanding horizons, connecting markets. With over 50 years of expertise, Kiko Global Trade facilitates seamless global trade, empowering businesses with reliable logistics and strategic international partnerships.">
+    <meta name="description" content="Kiko Global Trade connects businesses to international markets with import and export solutions, including structured protein import coordination and cold chain logistics between South America, Oceania, and the United States.">
     
     <link rel="canonical" href="https://kikoglobal.trade/">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kikoglobal.trade/">
     <meta property="og:title" content="Kiko Global Trade - Professional Global Trade Solutions">
-    <meta property="og:description" content="Expanding horizons, connecting markets. With over 50 years of expertise, Kiko Global Trade facilitates seamless global trade.">
+    <meta property="og:description" content="Import and export solutions with structured protein import coordination and cold chain logistics.">
     <meta property="og:image" content="https://kikoglobal.trade/images/Gemini_Generated.jpg">
 
     <script type="application/ld+json">
@@ -22,7 +22,9 @@
       "name": "Kiko Global Trade",
       "url": "https://kikoglobal.trade/",
       "logo": "https://kikoglobal.trade/images/logo-kiko-global-trade.jpg",
-      "description": "Expanding horizons, connecting markets. With over 50 years of expertise, Kiko Global Trade facilitates seamless global trade, empowering businesses with reliable logistics and strategic international partnerships.",
+      "description": "Kiko Global Trade connects businesses to international markets with import and export solutions, including structured protein import coordination and cold chain logistics between South America, Oceania, and the United States.",
+      "areaServed": ["United States", "South America", "Oceania"],
+      "knowsAbout": ["International trade", "Import coordination", "Export coordination", "Protein import", "Cold chain logistics", "Customs documentation"],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "100 East Pine Street Suite 110",
@@ -105,9 +107,51 @@
         .hero-section p {
             font-size: 17px;
             color: #666;
-            max-width: 700px;
+            max-width: 720px;
             margin: auto;
             line-height: 1.6;
+        }
+
+        /* NEW: Protein positioning line */
+        .hero-highlight {
+            margin-top: 18px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* NEW: Capability cards */
+        .capabilities {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            align-items: stretch;
+            margin: 26px auto 0 auto;
+            max-width: 820px;
+            flex-wrap: wrap;
+        }
+
+        .cap-card {
+            background: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 16px 16px;
+            width: 250px;
+            text-align: left;
+        }
+
+        .cap-card h3 {
+            margin: 0 0 8px 0;
+            font-size: 16px;
+            color: #D32F2F;
+        }
+
+        .cap-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+            text-align: left;
         }
 
         .hero-image {
@@ -130,6 +174,10 @@
             display: inline-block;
             margin-top: 30px;
             transition: 0.3s;
+        }
+
+        .contact-button:hover {
+            opacity: 0.92;
         }
 
         /* Welcome Section */
@@ -185,6 +233,10 @@
                 font-size: 16px;
                 padding: 0 10px;
             }
+            .cap-card {
+                width: 100%;
+                max-width: 520px;
+            }
         }
     </style>
 </head>
@@ -213,7 +265,29 @@
             We connect businesses to international markets with seamless import and export solutions. 
             Kiko Global Trade is your trusted partner in global expansion.
         </p>
+
+        <!-- NEW: Protein positioning -->
+        <p class="hero-highlight">
+            Specialized in structured protein import coordination and cold chain logistics between South America, Oceania, and the United States.
+        </p>
+        
         <img class="hero-image" src="images/Gemini_Generated.jpg" alt="Global Trade Port">
+        
+        <!-- NEW: Quick credibility for suppliers -->
+        <div class="capabilities">
+            <div class="cap-card">
+                <h3>Protein Sourcing</h3>
+                <p>Supplier alignment for salmon and beef categories, with structured procurement and long-term relationship focus.</p>
+            </div>
+            <div class="cap-card">
+                <h3>Compliance & Documentation</h3>
+                <p>Import coordination with accurate documentation flow, customs alignment, and operational discipline.</p>
+            </div>
+            <div class="cap-card">
+                <h3>Cold Chain Coordination</h3>
+                <p>Logistics planning for fresh and frozen cargo with temperature-sensitive handling and reliable delivery execution.</p>
+            </div>
+        </div>
         <a href="contact.html" class="contact-button">
             Contact Us
         </a>
