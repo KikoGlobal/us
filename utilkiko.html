@@ -3,253 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Kiko Global Trade - Professional Global Trade Solutions</title>
-    <meta name="description" content="Kiko Global Trade connects businesses to international markets with import and export solutions, including structured protein import coordination and cold chain logistics between South America, Oceania, and the United States.">
-    
-    <link rel="canonical" href="https://kikoglobal.trade/">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kikoglobal.trade/">
-    <meta property="og:title" content="Kiko Global Trade - Professional Global Trade Solutions">
-    <meta property="og:description" content="Import and export solutions with structured protein import coordination and cold chain logistics.">
-    <meta property="og:image" content="https://kikoglobal.trade/images/Gemini_Generated.jpg">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Kiko Global Trade",
-      "url": "https://kikoglobal.trade/",
-      "logo": "https://kikoglobal.trade/images/logo-kiko-global-trade.jpg",
-      "description": "Kiko Global Trade connects businesses to international markets with import and export solutions, including structured protein import coordination and cold chain logistics between South America, Oceania, and the United States.",
-      "areaServed": ["United States", "South America", "Oceania"],
-      "knowsAbout": ["International trade", "Import coordination", "Export coordination", "Protein import", "Cold chain logistics", "Customs documentation"],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "100 East Pine Street Suite 110",
-        "addressLocality": "Orlando",
-        "addressRegion": "FL",
-        "postalCode": "32801",
-        "addressCountry": "US"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-407-431-0938",
-        "contactType": "customer service"
-      }
-    }
-    </script>
-
+    <title>UTILKIKO - Kiko Global Trade</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: #f5f5f5;
-            color: #333;
+            background-color: #f8f8f8;
         }
-
         /* Top Bar */
         .top-bar {
             background-color: #D32F2F;
             color: white;
-            padding: 10px 20px;
+            padding: 10px;
             font-size: 14px;
             text-align: right;
+            padding-right: 20px;
         }
-
         /* Header */
         header {
             background-color: white;
-            padding: 15px 40px;
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-bottom: 3px solid #D32F2F;
         }
-
         .logo {
             height: 60px;
         }
-
         nav {
             display: flex;
-            gap: 25px;
+            gap: 20px;
         }
-
         nav a {
             color: #D32F2F;
             text-decoration: none;
             font-weight: bold;
             font-size: 16px;
         }
-
         nav a:hover {
             text-decoration: underline;
         }
-
-        /* Hero Section */
-        .hero-section {
-            padding: 60px 20px;
-            max-width: 900px;
+        .container {
+            max-width: 1100px;
             margin: auto;
-            background-color: #ffffff;
+            padding: 50px 20px;
+            text-align: left;
+            background: white;
         }
-
-        .hero-section h1 {
-            color: #D32F2F;
-            font-size: 30px;
-            margin-bottom: 15px;
-        }
-
-        .hero-section p {
-            font-size: 17px;
-            color: #666;
-            max-width: 720px;
-            margin: auto;
-            line-height: 1.6;
-        }
-
-        /* NEW: Protein positioning line */
-        .hero-highlight {
-            margin-top: 18px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        /* NEW: Capability cards */
-        .capabilities {
+        .content-section {
             display: flex;
-            gap: 16px;
-            justify-content: center;
-            align-items: stretch;
-            margin: 26px auto 0 auto;
-            max-width: 820px;
-            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
         }
-
-        .cap-card {
-            background: #fafafa;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 16px 16px;
-            width: 250px;
-            text-align: left;
-        }
-
-        .cap-card h3 {
-            margin: 0 0 8px 0;
-            font-size: 16px;
-            color: #D32F2F;
-        }
-
-        .cap-card p {
-            margin: 0;
-            font-size: 14px;
-            color: #555;
-            line-height: 1.5;
-            text-align: left;
-        }
-
-        .hero-image {
-            display: block;
-            margin: 40px auto 0 auto;
-            max-width: 550px;
-            width: 100%;
+        .content-section img {
+            max-width: 50%;
             height: auto;
-            border-radius: 6px;
         }
-
-        /* Button */
-        .contact-button {
-            background-color: #D32F2F;
-            color: white;
-            padding: 14px 28px;
-            font-size: 16px;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 30px;
-            transition: 0.3s;
+        .text-content {
+            width: 45%;
+            text-align: justify;
         }
-
-        .contact-button:hover {
-            opacity: 0.92;
+        .text-center {
+            text-align: center;
+            margin-bottom: 50px;
         }
-
-        /* Welcome Section */
-        .welcome-section {
-            background-color: #D32F2F;
-            color: white;
-            padding: 60px 20px;
-        }
-
-        .welcome-section h2 {
-            font-size: 26px;
-            margin-bottom: 15px;
-        }
-
-        .welcome-section p {
-            font-size: 17px;
-            max-width: 700px;
-            margin: auto;
-            line-height: 1.6;
-        }
-
-        /* Footer */
         .footer {
             background-color: #333;
             color: white;
-            padding: 20px;
-            font-size: 14px;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .footer img {
+            max-width: 260px; /* Aumentado em 30% */
+            display: block;
+            margin: 10px auto;
         }
 
-        /* ======= RESPONSIVO ======= */
+        /* ======= Ajuste Responsivo ======= */
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
-                padding: 15px 20px;
-            }
-            .logo {
-                margin-bottom: 15px;
+                text-align: center;
             }
             nav {
                 flex-direction: column;
-                gap: 12px;
-                width: 100%;
+                gap: 10px;
             }
-            nav a {
-                display: block;
-                padding: 8px;
-                border-bottom: 1px solid #eee;
+            .content-section {
+                flex-direction: column;
+                text-align: center;
             }
-            .hero-section h1 {
-                font-size: 24px;
+            .content-section img {
+                max-width: 90%;
             }
-            .hero-section p, .welcome-section p {
-                font-size: 16px;
-                padding: 0 10px;
+            .text-content {
+                width: 90%;
+                text-align: center;
+                margin-top: 20px;
             }
-            .cap-card {
-                width: 100%;
-                max-width: 520px;
+            .logo {
+                height: 50px;
+            }
+            .footer img {
+                max-width: 200px;
             }
         }
     </style>
 </head>
-
 <body>
 
+    <!-- Top Bar -->
     <div class="top-bar">
-        Phone: (407) 431-0938
+        Phone: (407) 431-0938‬
     </div>
 
+    <!-- Header -->
     <header>
         <img src="images/logo-kiko-global-trade.jpg" alt="Kiko Global Trade Logo" class="logo">
-         <nav>
+        <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="services.html">Services</a>
@@ -259,50 +135,37 @@
         </nav>
     </header>
 
-    <section class="hero-section">
-        <h1>Professional Global Trade Solutions</h1>
-        <p>
-            We connect businesses to international markets with seamless import and export solutions. 
-            Kiko Global Trade is your trusted partner in global expansion.
-        </p>
-
-        <!-- NEW: Protein positioning -->
-        <p class="hero-highlight">
-            Specialized in structured protein import coordination and cold chain logistics between South America, Oceania, and the United States.
-        </p>
-
-        <!-- NEW: Quick credibility for suppliers -->
-        <div class="capabilities">
-            <div class="cap-card">
-                <h3>Protein Sourcing</h3>
-                <p>Supplier alignment for salmon and beef categories, with structured procurement and long-term relationship focus.</p>
-            </div>
-            <div class="cap-card">
-                <h3>Compliance & Documentation</h3>
-                <p>Import coordination with accurate documentation flow, customs alignment, and operational discipline.</p>
-            </div>
-            <div class="cap-card">
-                <h3>Cold Chain Coordination</h3>
-                <p>Logistics planning for fresh and frozen cargo with temperature-sensitive handling and reliable delivery execution.</p>
+    <!-- First Section - Imagem à esquerda, texto à direita -->
+    <section class="container">
+        <div class="content-section">
+            <img src="images/kiko-embalagens-qualidade.png" alt="Kiko Embalagens Qualidade">
+            <div class="text-content">
+                <h2>Quality that makes all the difference</h2>
+                <p>With more than 45 years of experience and more than 70 internal employees, the company dedicates its work to food retail, the vast majority of which are supermarket chains and medium-sized markets.</p>
+                <p>The portfolio divided between disposable food items, LED lamps, inserts and bath loofahs is vast and covers practically all existing areas that make up the bazaar sector in a supermarket.</p>
+                <p>The numbers are impressive. A catalog with more than a thousand items that exceeds the monthly distribution of 1 million products throughout the national territory, including some countries such as Uruguay, Paraguay, and Bolivia.</p>
             </div>
         </div>
 
-        <img class="hero-image" src="images/Gemini_Generated.jpg" alt="Global Trade Port">
+        <!-- Second Section -->
+        <div class="text-center">
+            <h2>Experience and Vanguard</h2>
+            <p>Útil Kiko continually improves its products.</p>
+            <p>Unlike the majority of the sector, where competition massively gives up quality in search of other benefits; The company seeks differentiated materials, with certification and superior quality, with the intention that only products that can actually come into contact with food are sent to the consumer.</p>
+        </div>
 
-        <a href="contact.html" class="contact-button">
-            Contact Us
-        </a>
+        <!-- Image linking to catalog -->
+        <div class="text-center">
+            <a href="http://utilkiko.com.br/en/disposable.pdf" target="_blank" class="catalog-link">
+                <img src="images/Kiko-Global-base.png" alt="Kiko Global Base" style="max-width: 100%; height: auto;">
+            </a>
+        </div>
     </section>
 
-    <section class="welcome-section">
-        <h2>Welcome</h2>
-        <p>
-            Expanding horizons, connecting markets. With over 50 years of expertise, Kiko Global Trade facilitates seamless global trade, empowering businesses with reliable logistics and strategic international partnerships.
-        </p>
-    </section>
-
+    <!-- Footer -->
     <footer class="footer">
-        © 2025 Kiko Global Trade. All Rights Reserved.
+        <p>&copy; 2025 Kiko Global Trade. All Rights Reserved.</p>
+        <img src="images/logo-util-kiko.jpg" alt="Util Kiko Logo">
     </footer>
 
 </body>
